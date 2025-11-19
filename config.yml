@@ -149,7 +149,7 @@ offer_draw:
 
 resign:
   enabled: true
-  score: -2
+  score: -3
   consecutive_moves: 9
   against_humans: false
   min_rating: 30
