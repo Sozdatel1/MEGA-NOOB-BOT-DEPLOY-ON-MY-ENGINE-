@@ -4,12 +4,12 @@ engines:
   standard:
     dir: "./engines"
     name: "stockfish_14053109_x64"
-    ponder: true
+    ponder: false
     silence_stderr: false
     move_overhead_multiplier: 22.5
     uci_options:
-      Threads: 4
-      Hash: 4100
+      Threads: 1
+      Hash: 128
       Move Overhead: 100
     limits:
       # time: 20.0
@@ -23,8 +23,8 @@ engines:
     silence_stderr: false
     move_overhead_multiplier: 1.1
     uci_options:
-      Threads: 4
-      Hash: 768
+      Threads: 
+      Hash: 128
       Move Overhead: 200
       EvalFile: "horde-28173ddccabe.nnue:racingkings-636b95f085e3.nnue:crazyhouse-8ebf84784ad2.nnue:kingofthehill-978b86d0e6a4.nnue:antichess-dd3cbe53cd4e.nnue:atomic-2cf13ff256cc.nnue:3check-cb5f517c228b.nnue"
     limits:
@@ -34,7 +34,7 @@ engines:
 
 syzygy:
   standard:
-    enabled: true
+    enabled: false
     paths:
       - "./engines/syzygy"
     max_pieces: 7
@@ -59,7 +59,7 @@ gaviota:
   max_pieces: 5
 
 opening_books:
-  enabled: true
+  enabled: false
   priority: 900
   books:
 #   standard:
@@ -95,7 +95,7 @@ opening_books:
 
 online_moves:
   opening_explorer:
-    enabled: true
+    enabled: false
     priority: 300
     only_without_book: false
     use_for_variants: true
@@ -111,7 +111,7 @@ online_moves:
     # max_depth: 20
 
   lichess_cloud:
-    enabled: true
+    enabled: false
     priority: 200
     only_without_book: true
     min_eval_depth: 20
@@ -123,7 +123,7 @@ online_moves:
     # max_depth: 30
 
   chessdb:
-    enabled: true                     # Activate online moves from https://chessdb.cn/queryc_en/
+    enabled: false                     # Activate online moves from https://chessdb.cn/queryc_en/
     priority: 250                        # Priority with which this move source is used. Higher priority is used first.
     only_without_book: false              # Whether the chessdb should only be used if there is no matching book.
    # min_candidates: 5                     # Minimum number of candidate moves.
@@ -135,7 +135,7 @@ online_moves:
     #max_depth: 30
     
   online_egtb:
-    enabled: true
+    enabled: false
     min_time: 20
     timeout: 3
 
@@ -149,13 +149,13 @@ offer_draw:
 
 resign:
   enabled: true
-  score: -1000
+  score: -2
   consecutive_moves: 9
   against_humans: false
-  min_rating: 3000
+  min_rating: 30
 
 challenge:
-  concurrency: 1
+  concurrency: 4
   max_takebacks: 300000      
   bullet_with_increment_only: false   
 # min_initial: 60
@@ -164,15 +164,16 @@ challenge:
     - chess960
    # - antichess
     - atomic
-    - kingOfTheHill
-    - racingKings
-    - threeCheck
+   # - kingOfTheHill
+   # - racingKings
+    #- threeCheck
   bot_time_controls:
     - bullet
     - blitz
   # - rapid
   # - classical
   human_time_controls:
+    - bullet
     - blitz
     - rapid
     - classical
@@ -181,10 +182,10 @@ challenge:
     - rated
   human_modes:
     - casual
-   # - rated
+    - rated
 
 matchmaking:
-  delay: 10
+  delay: 480
   timeout: 30
   selection: cyclic
   types:
@@ -195,21 +196,20 @@ matchmaking:
       tc: 1+0
     anup:
       tc: 3+0
-    sexy:
+    wow:
       tc: 0+1
     hot:
       tc: 0+2
       variant: chess960
 
 messages:
-  greeting: "Humpo Dumpo! I am {me} made by @Supratsa owned by @VEERSAMRATSINGH .Looking forward to start,good luck."
-  goodbye: "Good game!How about a rematch?"
-  greeting_spectators: "Hey, I'm running on {engine} .Type !help for a list of commands."
-  goodbye_spectators: "Thanks For watching!"
+  greeting: "Приветствую! Я {me} .Введите !help чтобы увидеть список поддерживаемых команд."
+  goodbye: "Хорошая игра! Как насчёт реванша?"
+  greeting_spectators: "Приветствую зрители! я работаю на {engine} .Введите !help чтобы увидеть список команд."
+  goodbye_spectators: "Спасибо за просмотр!"
 
 whitelist:
-  - VEERSAMRATSINGH
-  - Supratsa
+  - shahmati23
 blacklist: 
   - NimsiluBot
 online_blacklists:
