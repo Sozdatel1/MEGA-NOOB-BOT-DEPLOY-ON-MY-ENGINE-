@@ -53,7 +53,7 @@ syzygy:
     instant_play: true
 
 gaviota:
-  enabled: true
+  enabled: false
   paths:
     - "/path/to/gaviota"
   max_pieces: 5
