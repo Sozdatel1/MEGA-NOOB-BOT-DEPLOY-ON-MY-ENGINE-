@@ -185,7 +185,7 @@ challenge:
     - rated
 
 matchmaking:
-  delay: 580
+  delay: 100
   timeout: 30
   selection: cyclic
   types:
