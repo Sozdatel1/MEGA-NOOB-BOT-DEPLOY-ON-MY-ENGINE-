@@ -4,7 +4,7 @@ engines:
   standard:
     dir: "./engines"
     name: "stockfish_14053109_x64"
-    ponder: true
+    ponder: false
     silence_stderr: false
     move_overhead_multiplier: 22.5
     uci_options:
