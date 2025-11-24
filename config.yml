@@ -169,7 +169,7 @@ challenge:
     #- threeCheck
   bot_time_controls:
     - bullet
-    - blitz
+   # - blitz
   # - rapid
   # - classical
   human_time_controls:
@@ -194,14 +194,9 @@ matchmaking:
       rated: true
     utsa: 
       tc: 1+0
-    anup:
-      tc: 3+0
     wow:
       tc: 0+1
-    hot:
-      tc: 0+2
-      variant: chess960
-
+    
 messages:
   greeting: "Приветствую! Я {me} .Введите !help чтобы увидеть список поддерживаемых команд."
   goodbye: "Хорошая игра! Как насчёт реванша?"
