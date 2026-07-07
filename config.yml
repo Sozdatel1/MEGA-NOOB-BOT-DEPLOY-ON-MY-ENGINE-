@@ -183,7 +183,7 @@ challenge:
   human_modes:
     - casual
     - rated
-
+  human: {}  
 matchmaking:
   delay: 100
   timeout: 30
