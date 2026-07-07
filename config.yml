@@ -168,6 +168,7 @@ challenge:
     - racingKings
     - threeCheck
   bot:
+    bullet_with_increment_only: false
     block_kings: false
     engine_offers: false
     time_controls:
@@ -179,6 +180,7 @@ challenge:
       - casual
       - rated
   human:
+    bullet_with_increment_only: false
     block_kings: false
     engine_offers: false
     time_controls:
