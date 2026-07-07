@@ -162,15 +162,15 @@ challenge:
   variants:
     - standard
     - chess960
-   # - antichess
+    - antichess
     - atomic
-   # - kingOfTheHill
-   # - racingKings
-    #- threeCheck
+    - kingOfTheHill
+    - racingKings
+    - threeCheck
   bot_time_controls:
     - bullet
-   # - blitz
-  # - rapid
+    - blitz
+    - rapid
   # - classical
   human_time_controls:
     - bullet
