@@ -159,7 +159,9 @@ challenge:
   max_takebacks: 300000      
   bullet_with_increment_only: false   
 # min_initial: 60
-  variants:
+  
+  bot:
+    variants:
     - standard
     - chess960
     - antichess
@@ -167,7 +169,6 @@ challenge:
     - kingOfTheHill
     - racingKings
     - threeCheck
-  bot:
     bullet_with_increment_only: false
     block_kings: false
     engine_offers: false
@@ -180,6 +181,14 @@ challenge:
       - casual
       - rated
   human:
+    variants:
+    - standard
+    - chess960
+    - antichess
+    - atomic
+    - kingOfTheHill
+    - racingKings
+    - threeCheck
     bullet_with_increment_only: false
     block_kings: false
     engine_offers: false
