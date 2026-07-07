@@ -167,23 +167,25 @@ challenge:
     - kingOfTheHill
     - racingKings
     - threeCheck
-  bot_time_controls:
-    - bullet
-    - blitz
-    - rapid
-  # - classical
-  human_time_controls:
-    - bullet
-    - blitz
-    - rapid
-    - classical
-  bot_modes:
-    - casual
-    - rated
-  human_modes:
-    - casual
-    - rated
-  human: {}  
+  bot:
+    time_controls:
+      - bullet
+      - blitz
+      - rapid
+    # - classical
+    modes:
+      - casual
+      - rated
+  human:
+    time_controls:
+      - bullet
+      - blitz
+      - rapid
+      - classical
+    modes:
+      - casual
+      - rated
+  
 matchmaking:
   delay: 100
   timeout: 30
