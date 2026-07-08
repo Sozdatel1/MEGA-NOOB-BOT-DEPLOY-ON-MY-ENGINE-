@@ -163,6 +163,7 @@ challenge:
   bot:
     variants:
       - standard
+      - crazyhouse
       - chess960
       - antichess
       - atomic
@@ -183,6 +184,7 @@ challenge:
   human:
     variants:
       - standard
+      - crazyhouse
       - chess960
       - antichess
       - atomic
