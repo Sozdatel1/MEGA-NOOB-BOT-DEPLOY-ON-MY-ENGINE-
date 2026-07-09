@@ -178,7 +178,7 @@ challenge:
       - bullet
       - blitz
       - rapid
-    # - classical
+      - classical
     modes:
       - casual
       - rated
@@ -215,8 +215,51 @@ matchmaking:
       rated: true
     utsa: 
       tc: 1+0
-    wow:
+      rated: true
+    anup:
+      tc: 3+0
+      rated: true
+    sexy:
       tc: 0+1
+      rated: true
+    hot:
+      tc: 0+2
+      variant: chess960
+      rated: true
+    atom:
+      tc: 0.5+0
+      variant: atomic
+      rated: true
+    rapid:
+      tc: 8+0
+      rated: true
+    check:
+      tc: 1+0
+      variant: threeCheck
+      rated: true
+    hill:
+      tc: 1+0
+      variant: kingOfTheHill
+      rated: true
+    racing:
+      tc: 1+0
+      variant: racingKings
+      rated: true
+    anti:
+      tc: 1+0
+      variant: antichess
+      rated: true
+    crazy:
+      tc: 1+0
+      variant: crazyhouse
+      rated: true
+    horde:
+      tc: 1+0
+      variant: horde
+      rated: true
+    class:
+      tc: 25+0
+      rated: true
     
 messages:
   greeting: "Приветствую! Я {me} .Введите !help чтобы увидеть список поддерживаемых команд."
