@@ -165,6 +165,7 @@ challenge:
       - standard
       - crazyhouse
       - chess960
+      - horde
       - antichess
       - atomic
       - kingOfTheHill
@@ -184,6 +185,7 @@ challenge:
   human:
     variants:
       - standard
+      - horde
       - crazyhouse
       - chess960
       - antichess
