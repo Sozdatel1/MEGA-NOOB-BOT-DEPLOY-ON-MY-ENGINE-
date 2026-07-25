@@ -273,6 +273,7 @@ whitelist:
   - shahmati23
 blacklist: 
   - NimsiluBot
+  - SuperGame5
 online_blacklists:
 #  - 
 
