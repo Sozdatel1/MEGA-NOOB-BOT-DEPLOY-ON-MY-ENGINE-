@@ -177,7 +177,6 @@ class MatchmakingTypeConfig:
     multiplier: int | None
     min_rating_diff: int | None
     max_rating_diff: int | None
-    target_rating_diff: int | None
 
 
 @dataclass
@@ -186,6 +185,15 @@ class MatchmakingConfig:
     timeout: int
     selection: Literal["weighted_random", "sequential"]
     types: dict[str, MatchmakingTypeConfig]
+
+
+@dataclass
+class TournamentConfig:
+    waiting_period: int
+    tracked_users: list[str]
+    tracked_teams: list[str]
+    own_team: str | None
+    variants: list[str]
 
 
 @dataclass
