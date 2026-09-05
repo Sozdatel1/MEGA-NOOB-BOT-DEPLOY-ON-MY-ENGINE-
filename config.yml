@@ -61,7 +61,7 @@ gaviota:
   max_pieces: 5
 
 opening_books:
-  enabled: true
+  enabled: false
   priority: 900
   books:
 #   standard:
