@@ -36,7 +36,7 @@ engines:
 
 syzygy:
   standard:
-    enabled: true
+    enabled: false
     paths:
       - "./engines/syzygy"
     max_pieces: 7
@@ -97,7 +97,7 @@ opening_books:
 
 online_moves:
   opening_explorer:
-    enabled: true
+    enabled: false
     priority: 300
     only_without_book: false
     use_for_variants: true
@@ -113,7 +113,7 @@ online_moves:
     # max_depth: 20
 
   lichess_cloud:
-    enabled: true
+    enabled: false
     priority: 200
     only_without_book: true
     min_eval_depth: 20
@@ -125,7 +125,7 @@ online_moves:
     # max_depth: 30
 
   chessdb:
-    enabled: true                 # Activate online moves from https://chessdb.cn/queryc_en/
+    enabled: false             # Activate online moves from https://chessdb.cn/queryc_en/
     priority: 250                        # Priority with which this move source is used. Higher priority is used first.
     only_without_book: false              # Whether the chessdb should only be used if there is no matching book.
    # min_candidates: 5                     # Minimum number of candidate moves.
@@ -137,7 +137,7 @@ online_moves:
     #max_depth: 30
     
   online_egtb:
-    enabled: true
+    enabled: false
     min_time: 20
     timeout: 3
 
