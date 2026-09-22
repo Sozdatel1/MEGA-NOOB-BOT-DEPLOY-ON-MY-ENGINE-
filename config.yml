@@ -143,6 +143,7 @@ online_moves:
   atomicdb:
     enabled: false        # или false (зависит от того, нужна ли вам эта база данных)
     priority: 1
+    only_without_book: false
     # возможно, здесь требуются дополнительные параметры, например:
     # url: "https://..." 
 
