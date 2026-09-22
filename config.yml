@@ -144,6 +144,7 @@ online_moves:
     enabled: false        # или false (зависит от того, нужна ли вам эта база данных)
     priority: 1
     only_without_book: false
+    allow_repetitions: false
     # возможно, здесь требуются дополнительные параметры, например:
     # url: "https://..." 
 
