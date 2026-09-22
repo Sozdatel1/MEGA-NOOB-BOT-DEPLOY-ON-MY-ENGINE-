@@ -149,6 +149,7 @@ online_moves:
     max_depth: 100
     min_time: 0
     max_time: 10
+    timeout: 5
     
     # возможно, здесь требуются дополнительные параметры, например:
     # url: "https://..." 
