@@ -140,7 +140,7 @@ online_moves:
     enabled: true
     min_time: 20
     timeout: 3
- atomicdb:
+  atomicdb:
     enabled: false        # или false (зависит от того, нужна ли вам эта база данных)
     # возможно, здесь требуются дополнительные параметры, например:
     # url: "https://..." 
