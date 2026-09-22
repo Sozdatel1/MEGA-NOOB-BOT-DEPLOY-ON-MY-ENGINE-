@@ -145,6 +145,8 @@ online_moves:
     priority: 1
     only_without_book: false
     allow_repetitions: false
+    trust_eval: true
+    max_depth: 100
     # возможно, здесь требуются дополнительные параметры, например:
     # url: "https://..." 
 
