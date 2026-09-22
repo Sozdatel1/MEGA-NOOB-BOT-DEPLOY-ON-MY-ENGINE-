@@ -147,6 +147,9 @@ online_moves:
     allow_repetitions: false
     trust_eval: true
     max_depth: 100
+    min_time: 0
+    max_time: 10
+    
     # возможно, здесь требуются дополнительные параметры, например:
     # url: "https://..." 
 
