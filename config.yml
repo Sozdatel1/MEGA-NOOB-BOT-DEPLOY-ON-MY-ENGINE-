@@ -142,6 +142,7 @@ online_moves:
     timeout: 3
   atomicdb:
     enabled: false        # или false (зависит от того, нужна ли вам эта база данных)
+    priority: 1
     # возможно, здесь требуются дополнительные параметры, например:
     # url: "https://..." 
 
